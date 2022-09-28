@@ -1,7 +1,7 @@
 from typing import Any, List, Union
  
  
-def print_less_then_38(arr: List[Union[List[int], str, int]]) -> None: # с помощью аннотации Union мы указываем, что будем работать со списком который будет содержать целые числоа, строки и список с целыми числами
+def print_less_then_38(arr: List[Union[List[int], str, int]]) -> None: # с помощью аннотации List[Union[...]] мы указываем, что будем работать со списком который будет содержать целые числоа, строки и список с целыми числами
   
     less_then_38 = [] # пустой массив
     for raw_item in arr: #  перебераем элементы в arr
