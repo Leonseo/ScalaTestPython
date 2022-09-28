@@ -18,7 +18,7 @@ def get_numeric_elements(arr: List[Union[str, int, List[int]]]) -> List[int]: #-
     return numeric_elements # вернем функции get_numeric_elements список numeric_elements
  
  
-def print_less_then_38(arr: List[Union[str, int, List[int]]]): # с помощью аннотации Union мы указываем, что будем работать со списком который будет содержать целые числоа, строки и список с целыми числами
+def print_less_then_38(arr: List[Union[str, int, List[int]]]): # с помощью аннотации List[Union[...]] мы указываем, что будем работать со списком который будет содержать целые числоа, строки и список с целыми числами
     matches = [item for item in get_numeric_elements(arr) if item < 38] # добавляем список в котором переберием элементы списка полученного с помощью get_numeric_elements(arr) и проверяем на условие 
     print(", ".join(str(x) for x in matches))
     
